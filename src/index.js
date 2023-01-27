@@ -3,6 +3,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import "./index.css"
+
+import App from './App'
+
+
+
 // JSX Code ==> this code internally convert into Pure 'React Code' by "Babel" it is a JS Compiler. 
 //ReactDom.render(<h1><b>Hello,<br /> Vishal Tawar</b></h1>,
 //   document.getElementById("root"));
@@ -87,6 +92,7 @@ ReactDom.render(
 // ***********************************************************************//
 // Chalange Task 4 :- show time wise Greting ex. Good Morning, Good Afternnon & so on.
 
+/*
 let greeting = " ";
 let time = new Date();
 let hour = time.getHours();
@@ -95,7 +101,7 @@ const css={ };
 if (hour > 1 && hour < 12) {
     greeting = "Good  Morning";
     css.color="green";
-} else if (hour > 12 && hour < 19) {
+} else if (hour >= 12 && hour < 19) {
     greeting = "Good  Afternoon";
     css.color="#ffbc00";
 } else {
@@ -103,12 +109,19 @@ if (hour > 1 && hour < 12) {
     css.color="black";
 }
 
-
-
-
 ReactDom.render(
     <div className='heading'>    
-        <h1>Hello sir, <span style={css}>{greeting}</span></h1>
+        <h1 contentEditable="true" >Hello vishal, <span style={css}>{greeting}</span></h1>
     </div>
     , document.getElementById("root")
 );
+*/
+// ***********************************************************************//
+// task 5:-Create Component's use in App.js and 'render' here.
+
+ReactDom.render(<App />, document.getElementById('root'));
+
+// ***********************************************************************//
+// Chalange task 6:-Create Calculator using import  & export& Component's.
+
+ReactDom.render(<App />,document.getElementById("root"));
