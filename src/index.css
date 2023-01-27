@@ -1,18 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: rgb(113, 211, 211);
 
 }
 
-
+/*
 .heading{
   color: rgb(255, 68, 0);
   background-color: dodgerblue;
-  /* border: 1px solid; */
+  border: 1px solid;
   font-size: 35px;
   width: 50%;
   padding: 10px;
@@ -23,7 +24,7 @@ body{
   font-family: 'Teko', sans-serif;
   text-transform: capitalize;
 
-}/*
+}
 .imgdiv{
   display: flex;
   justify-content: center;
@@ -35,3 +36,72 @@ body{
   border-radius: 8px;
   box-shadow: 8px 8px 8px black;
 } */
+
+
+/* MovieCard CSS */
+
+.card {
+  width: 300px;
+  /* height: 450px; */
+  /* border: 1px solid red; */
+    margin: 25px;
+  overflow: hidden;
+  padding: 0 0 10px 0;
+  box-shadow: 3px 3px 7px black;
+
+}
+
+.card img {
+  height: 250px;
+
+}
+
+.card span {
+  font-weight: bolder;
+}
+
+.card p {
+  font-size: 18px;
+  color: rgb(79, 76, 76);
+}
+
+.card_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+}
+
+.card_info a {
+  /* border: 1px solid black; */
+  color: black;
+  font-weight: bold;
+  padding: 7px 25px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px black;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(252, 161, 43, 0.794);
+
+}
+
+.prop_card {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card:hover {
+  /* width: 320px; */
+  box-shadow: 10px 10px 7px rgb(5, 5, 5);
+  transform: scale(1.1);
+}
+
+.card_info a:hover {
+  background-color: rgb(31, 31, 217);
+  color: white;
+  transform: scale(1.1);
+
+}
