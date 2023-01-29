@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import App from './App';
 import "./index.css";
 // import App from './App';
+
 import MovieCards from './MovieCards';
 import Navbar from './Navbar';
 
+import movieData from './MovieData';
 
 
 
@@ -124,43 +127,28 @@ ReactDom.render(
 // ***********************************************************************//
 // Chalange task 6:-Create Calculator using import  & export& Component's.
 
+//  ReactDom.render(<App/>
+// ,document.getElementById("root"));
 
-
+// ***********************************************************************//
+//  task 7:-Develop Movies Card using Component's .
 
 
 ReactDom.render(
     <>
-    <Navbar/>
-    <div className='prop_card'>
-        <MovieCards
-         img="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/3314/1770003314/1770003314-v"
-            title="M.S Dhoni"
-            info="The Untold Story"
-            link="https://www.hotstar.com/in/movies/ms-dhoni-the-untold-story/1770003314"
-        />
-        <MovieCards
-         img="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5457/1455457-v-64cc7681c13d"
-            title="Jhanda"
-            info="Uncha Rahe Humara: the Tricolor"
-            link="https://www.hotstar.com/in/movies/jhanda-uncha-rahe-humara-the-tricolor/1260129629"
-        />
-        <MovieCards
-         img="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7676/647676-v"
-            title="Tanaji"
-            info="The Unsung Warrior"
-            link="https://www.hotstar.com/in/movies/tanhaji/1260022117"
-        />
-        <MovieCards
-         img="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/8437/1000058437/1000058437-v"
-            title="Parayan"
-            link="https://www.hotstar.com/in/movies/payanam/1000058437"
-        />
-        <MovieCards
-         img="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5457/1455457-v-64cc7681c13d"
-            title="Jhanda"
-            info="Uncha Rahe Humara: the Tricolor"
-            link="https://www.hotstar.com/in/movies/jhanda-uncha-rahe-humara-the-tricolor/1260129629"
-        />
+        <Navbar />
+        <div className='prop_card'>
+            {movieData.map((mdata)=>{
+                return (
+                    <MovieCards
+                        key={mdata.id}
+                        img={mdata.img}
+                        title={mdata.title}
+                        info={mdata.info}
+                        link={mdata.link}
+                    />
+                )
+            })}
         </div>
     </>
     , document.getElementById("root"));
