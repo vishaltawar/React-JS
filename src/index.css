@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(195, 204, 29);
+  background-color: rgb(169, 175, 49);
 
 }
 
@@ -104,4 +104,48 @@ body {
   color: white;
   transform: scale(1.1);
 
+}
+/*   Hooks   Css*/
+#main{
+
+  width: 500px;
+  height: 200px;
+  margin: 500px auto;
+}
+
+#value{
+  margin-left: 70px;
+}
+#inc{
+  width: 150px;
+  height: 50px;
+  border: 1px solid;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+#dec{
+  width: 150px;
+  height: 50px;
+  border: 1px solid;
+  margin: 5px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+/* ****** Time ******* */
+
+#main h2{
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+  margin-left: 20px;
+}
+#text{
+  border: 1px solid;
+  text-align: center;
+  color: rgb(247, 242, 242);
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  padding: 10px;
 }

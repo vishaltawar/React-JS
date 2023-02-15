@@ -8,6 +8,8 @@ import MovieCards from './MovieCards';
 import Navbar from './Navbar';
 
 import movieData from './MovieData';
+import Hooks from './componants/Hooks';
+import Time from './componants/Time';
 
 
 
@@ -133,7 +135,7 @@ ReactDom.render(
 // ***********************************************************************//
 //  task 7:-Develop Movies Card using Component's .
 
-
+/*
 ReactDom.render(
     <>
         <Navbar />
@@ -152,3 +154,10 @@ ReactDom.render(
         </div>
     </>
     , document.getElementById("root"));
+*/
+ReactDom.render(
+    <>
+    {/* <Hooks/> */}
+    <Time/>
+    </>,document.getElementById('root')
+);
