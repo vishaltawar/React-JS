@@ -10,6 +10,7 @@ import Navbar from './Navbar';
 import movieData from './MovieData';
 import Hooks from './componants/Hooks';
 import Time from './componants/Time';
+import InputValue from './componants/InputValue';
 
 
 
@@ -127,7 +128,7 @@ ReactDom.render(
 // ReactDom.render(<App />, document.getElementById('root'));
 
 // ***********************************************************************//
-// Chalange task 6:-Create Calculator using import  & export& Component's.
+// Chalange task 6:-Create Calculator using import & export& Component's.
 
 //  ReactDom.render(<App/>
 // ,document.getElementById("root"));
@@ -155,9 +156,12 @@ ReactDom.render(
     </>
     , document.getElementById("root"));
 */
+// ***********************************************************************//
+
 ReactDom.render(
     <>
     {/* <Hooks/> */}
-    <Time/>
+    {/* <Time/> */}
+    <InputValue/>
     </>,document.getElementById('root')
 );
