@@ -1,16 +1,23 @@
+.head1{
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 25px;
+  background-color: rgb(249, 168, 8);
+}
 .heading{
     color: rgb(255, 68, 0);
-    /* background-color: dodgerblue; */
+    background-color: dodgerblue;
     border: 1px solid;
-    font-size: 55px;
+    font-size: 25px;
     width: 30%;
-    height: 100px;
-    padding: 10px;
+  
+    padding: 10px 0;
     border-radius: 5px;
     text-align: center;
     /* margin: 300px auto 0 auto; */
     box-shadow: 10px 10px 8px black;
-    font-family: 'Teko', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
     text-transform: capitalize;
   
   }

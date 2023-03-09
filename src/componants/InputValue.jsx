@@ -18,19 +18,27 @@ const InputValue = () => {
     }
     return (
         <><div className="main">
+            <h2 className="head1">To Do List</h2>
             <h1 className="heading">
-                Hello, Vishal
+                <ul >
+                    {data.map((cv) => {
+                        return (
+                            <>
+                                <ToDoList text={cv} />
+                            </>
+                        )
+                    })}
+                </ul>
             </h1>
-            <ul>
-                {data.map((cv) => { return <ToDoList text={cv} /> })}
-            </ul>
+
             <input type="text" className="inp"
-                placeholder="Input Here to Add Data..."
+                placeholder="Input Here to Add Data in List..."
                 onChange={dataChange}
             />
             <br />
-            <br />
+
             <button className="btn" onClick={Submit}>Submit</button>
+
         </div>
         </>
     );
