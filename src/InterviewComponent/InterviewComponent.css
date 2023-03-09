@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(197, 195, 190);   
+}
+.que_main_div{
+    /* border: 1px solid; */
+    padding: 20px;
+    background-color: wheat;
+    width: 60%;
+    margin: 0px auto;
+    border-radius: 10px;
+
+}
+.quetion{
+    /* border: 1px solid red; */
+    
+    color:rgba(0, 0, 0, 0.568);
+    margin: 0;
+    width: 100%;
+    padding:0 10px;
+    
+
+}
+.answer{
+    background-color: rgba(236, 198, 204, 0.635);
+    color:rgba(0, 0, 0, 0.568);
+    padding: 20px;
+}
+    
+.show{
+    background-color: rgb(61, 85, 78);
+    color:white;
+    border-radius: 40%;
+    padding: 0 5px;
+}
+   
+.sub_div{
+    background-color: rgb(219, 237, 238);
+    display: flex;
+    border-radius: 10px;
+
+
+}
