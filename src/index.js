@@ -4,13 +4,16 @@ import App from './App';
 import "./index.css";
 // import App from './App';
 
-import MovieCards from './MovieCards';
-import Navbar from './Navbar';
+import MovieCards from './componants/MovieCards';
+import Navbar from './componants/Navbar';
 
-import movieData from './MovieData';
+import movieData from './componants/MovieData';
 import Hooks from './componants/Hooks';
 import Time from './componants/Time';
 import InputValue from './componants/InputValue';
+import IncDcr from './componants/IncDcr';
+import ToDoList2 from './componants/ToDoList2';
+import Interview from './InterviewComponent/Interview';
 
 
 
@@ -77,23 +80,23 @@ const time= new Date().toLocaleTimeString();
 // ***********************************************************************//
 //  Task 4 :- add Image's
 
-/*
-const img1 = "https://picsum.photos/200/300";
-const img2 = "https://picsum.photos/250/350";
-const img3 = "https://picsum.photos/300/400";
-const img4 = "https://picsum.photos/350/450";
-ReactDom.render(
-    <>
-        <h1 className="heading">Lorem Image's :-</h1>
-        <div className='imgdiv'>
-            <img className='img' src={img4} />
-            <img className='img' src={img3} />
-            <img className='img' src={img2} />
-            <img className='img' src={img1} />
-        </div>
-    </>
-    , document.getElementById("root"));
-    */
+
+// const img1 = "https://picsum.photos/200/300";
+// const img2 = "https://picsum.photos/250/350";
+// const img3 = "https://picsum.photos/300/400";
+// const img4 = "https://picsum.photos/350/450";
+// ReactDom.render(
+//     <>
+//         <h1 className="heading">Lorem Image's :-</h1>
+//         <div className='imgdiv'>
+//             <img className='img' src={img4} />
+//             <img className='img' src={img3} />
+//             <img className='img' src={img2} />
+//             <img className='img' src={img1} />
+//         </div>
+//     </>
+//     , document.getElementById("root"));
+
 
 // ***********************************************************************//
 // Chalange Task 4 :- show time wise Greting ex. Good Morning, Good Afternnon & so on.
@@ -158,10 +161,31 @@ ReactDom.render(
 */
 // ***********************************************************************//
 
+// ReactDom.render(
+//     <>
+//     {/* <Hooks/> */}
+//     {/* <Time/> */}
+//     <InputValue/>
+//     </>,document.getElementById('root')
+// );
+// ***********************************************************************//
+// IncDcr Component Working here...
+// ReactDom.render(
+// <>
+// <IncDcr/>
+// </>,
+// document.getElementById('root'));
+// ***********************************************************************//
+// ToDoList 2 Working here...
+// ReactDom.render(
+// <>
+// <ToDoList2/>
+// </>,
+// document.getElementById('root'));
+// ***********************************************************************//
+// Interview Component 2 Working here...
 ReactDom.render(
     <>
-    {/* <Hooks/> */}
-    {/* <Time/> */}
-    <InputValue/>
-    </>,document.getElementById('root')
-);
+        <Interview />
+    </>,
+    document.getElementById('root'));

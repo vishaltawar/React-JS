@@ -2,7 +2,7 @@ import './App.css';
 // import Home from './Home';
 // import Bhojan from './Bhojan';
 // import Mony from './Mony'
-import { Add, Sub, Mul, Div } from './Calculator'
+import { Add, Sub, Mul, Div } from './componants/Calculator'
 // import Cards from './MovieCards'
 
 

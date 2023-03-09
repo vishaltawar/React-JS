@@ -149,3 +149,85 @@ body {
   background-color: cornflowerblue;
   padding: 10px;
 }
+/* ************************* IncDcr CSS  *************************************** */
+.main{
+  /* border: 1px solid; */
+  width: 50%;
+  margin: 200px auto;
+  background-color: rgb(200, 68, 244);
+  padding: 50px;
+  border-radius: 10px;
+  
+}
+.div2{
+  /* border: 1px solid blue; */
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around; 
+}
+/* ************************* ToDoList2  CSS  *************************************** */
+
+.baton{
+  background-color: blue;
+}
+.main_div{  
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px;
+  margin: 100px auto;
+  background-color: white;
+  width: 50%;
+  height: 70vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.head_div{
+  /* border: 1px solid red; */
+
+}
+.input_div{
+  /* border: 2px solid blue; */
+  display: flex;
+ justify-content: space-between;
+
+}
+.input_div input{
+  width: 85%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.list_div{
+  /* border: 1px solid cyan; */
+  text-align: start;
+  padding:0 50px;
+  background-color: rgba(4, 90, 249, 0.578);
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 30px;
+}
+.mapData{
+  /* border: 1px solid; */
+  width: 50%;
+  padding:  15px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+li{
+  list-style: none;
+  
+}
+span{
+  margin-right: 20px;
+}
+.deletIcon:hover{
+  color: red; 
+  transform: scale(1.7,1.5);
+}
+.restoreFromTrash:hover{
+  color: green;
+  transform: scale(1.7,1.5);
+}
